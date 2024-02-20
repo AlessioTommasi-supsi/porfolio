@@ -1,0 +1,43 @@
+version: '3'
+
+services:
+  apache:
+    image: httpd:latest
+    container_name: my_apache
+    ports:
+      - "8080:80"
+    volumes:
+      - ./html:/usr/local/apache2/htdocs/
+      - ./html/my_apache.conf:/usr/local/apache2/conf/my_apache.conf
+    depends_on:
+      - php
+      - mysql
+
+  mysql:
+    image: mysql:latest
+    container_name: my_mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: example
+      MYSQL_DATABASE: my_database
+      MYSQL_USER: my_user
+      MYSQL_PASSWORD: my_password
+
+  php:
+    image: php:apache
+    container_name: my_php
+    volumes:
+      - ./html:/var/www/html
+    ports:
+      - "9000:80"
+    depends_on:
+      - mysql
+
+  phpmyadmin:
+    image: phpmyadmin/phpmyadmin
+    container_name: my_phpmyadmin
+    ports:
+      - "8081:80"
+    environment:
+      PMA_HOST: mysql
+      PMA_PORT: 3306
+      MYSQL_ROOT_PASSWORD: example
