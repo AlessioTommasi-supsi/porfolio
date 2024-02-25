@@ -1,0 +1,9 @@
+body {
+    background-color: #fcc040;
+}
+
+.no_overflow {
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+}

@@ -1,0 +1,67 @@
+
+.gear_container {
+    width: auto;
+    height: 100%;
+    animation: rotate 10s linear infinite;
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    z-index: 500; /* Imposta il div in secondo piano */
+}
+.gear_container_left {
+    width: auto;
+    height: 100%;
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    z-index: 500;
+}
+.gear_container_bottom {
+    width: auto;
+    height: 100%;
+    position: fixed;
+    bottom: -50%;
+    left: 700px;
+    z-index: 500;/* Imposta il div in secondo piano */
+}
+.gear{
+    width: auto;
+    height: 100%;
+
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform-origin: center center;
+    /* Imposta il punto di rotazione al centro dell'immagine */
+    transform: translate(-50%, -50%);
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+@keyframes rotate_reverse {
+    from {
+        transform: rotate(360deg);
+    }
+
+    to {
+        transform: rotate(0deg);
+    }
+}
+.gear_logo_container {
+    width: auto;
+    height: 100%;
+    animation: rotate 10s linear infinite;
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    z-index: 500;
+    /* Imposta il div in secondo piano */
+}
