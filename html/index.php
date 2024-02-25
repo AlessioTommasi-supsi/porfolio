@@ -17,11 +17,18 @@ require_once($_SERVER["DOCUMENT_ROOT"] . "/controller/System/importer.php");
     <link rel="stylesheet" href="./view/css/gear.css">
     <link rel="stylesheet" href="./view/css/logo.css">
     <link rel="stylesheet" href="./view/css/glass_effect.css">
+    <link rel="stylesheet" href="./view/css/autoType.css">
 </head>
 
 <body>
 
+    <div id="textTypingContainer">
+        <div id="textTypingAnimation" class="glassEffect"></div>
+    </div>
+
+
     <div class="no_overflow">
+
         <div class="logo_container">
             <div class="gear_logo_container">
                 <img class="gear" src="./view/images/gearNobg.png" alt="Immagine senza sfondo">
@@ -39,6 +46,7 @@ require_once($_SERVER["DOCUMENT_ROOT"] . "/controller/System/importer.php");
             <img class="gear" src="./view/images/gearNobg.png" alt="Immagine senza sfondo">
         </div>
     </div>
+
 
     <div class="glass_container">
         <!-- Responsive content inside the glass effect div -->
@@ -62,6 +70,7 @@ require_once($_SERVER["DOCUMENT_ROOT"] . "/controller/System/importer.php");
 
         <!--  JavaScript files -->
         <script src="./view/js/rotation_on_scroll.js"></script>
+        <script src="./view/js/autoType.js"></script>
     </div>
 </body>
 

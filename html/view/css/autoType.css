@@ -1,0 +1,23 @@
+#textTypingContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 110vh;
+}
+
+.glassEffect {
+    font-size: 30px;
+    color: black;
+    font-weight: bold;
+    overflow: hidden;
+    background: rgba(255, 255, 255, 0.5);
+    /* Semi-transparent white background */
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+    /* Box shadow for depth */
+    backdrop-filter: blur(10px);
+    /* Apply blur effect */
+    padding: 20px;
+    margin: 20px auto;
+    z-index: 1000;
+}
