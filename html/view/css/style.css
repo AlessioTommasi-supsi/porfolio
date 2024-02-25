@@ -44,3 +44,25 @@ a:hover {
 a:active {
     color: rgb(0, 119, 128);
 }
+
+
+
+.image-with-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.image-with-text img {
+    max-width: 50%;
+    /* Regola la larghezza dell'immagine */
+    margin: 0 20px;
+    /* Aggiunge uno spazio tra l'immagine e il testo */
+}
+
+.image-with-text figcaption {
+    max-width: 50%;
+    /* Regola la larghezza del testo */
+    text-align: justify;
+    /* Allinea il testo */
+}

@@ -140,11 +140,15 @@ require_once($_SERVER["DOCUMENT_ROOT"] . "/controller/System/importer.php");
             </div>
 
             <div class="glass_content">
-                <h1>Title</h1>
-                <p>This is a paragraph of content. You can add more content here and it will adjust responsively within the glass container.</p>
-                <p>Resize the browser window to see the responsiveness in action.</p>
+                <figure class="image-with-text">
+                    <img src="./view/images/aboutMeImgCover.jpg" alt="Description of the image">
+                    <figcaption>
+                        <h1>Academic journey</h1>
+                        <p>This is a paragraph of content. You can add more content here and it will adjust responsively within the glass container.</p>
+                        <p>Resize the browser window to see the responsiveness in action.</p>
+                    </figcaption>
+                </figure>
             </div>
-
         </div>
 
         <div class="glass_container">
