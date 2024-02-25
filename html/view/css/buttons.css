@@ -1,0 +1,49 @@
+#backToTopBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    /* Distanza dal basso */
+    right: 20px;
+    /* Distanza dalla destra */
+    z-index: 1000;
+    background-color: rgba(3, 139, 250, 0.6);
+    /* Colore di sfondo con trasparenza */
+    color: black;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    /* Ombra */
+    backdrop-filter: blur(5px);
+    /* Effetto di vetro */
+}
+
+#backToTopBtn:hover {
+    background-color: rgba(10, 165, 185, 0.8);
+}
+
+#aboutMeBtn {
+    display: none;
+    position: fixed;
+    bottom: 80px;
+    right: 20px;
+    z-index: 1000;
+    background-color: rgba(250, 3, 3, 0.8);
+    color: black;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(5px);
+}
+
+#aboutMeBtn:hover {
+    background-color: rgba(243, 80, 80, 0.8);
+}
+

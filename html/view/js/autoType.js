@@ -1,12 +1,12 @@
 document.addEventListener('DOMContentLoaded', function () {
     const text_to_keep = "I am a:  "; // Testo da mantenere fisso
-    const textArray = ["Prima parola", "Seconda parola", "Terza parola"]; // Array di parole da scrivere
+    const textArray = ["Developer", "Enginieer", "IT expert",  "electronics enthusiast", "ALESSIO"]; // Array di parole da scrivere
     let currentTextIndex = 0; // Indice della parola corrente
+    
 
     // Funzione per cancellare e riscrivere l'ultima parola in loop
     function loopWriting() {
         let currentText = textArray[currentTextIndex];
-        let textLength = currentText.length;
         let newText = text_to_keep;
 
 
@@ -22,21 +22,26 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // Funzione per digitare il testo lettera per lettera
     function typeWriter(text, i) {
-        if (i < text.length) {
-            let newText = document.getElementById("textTypingAnimation").innerHTML;
-            newText = newText.substring(0, newText.length - 1) + text.charAt(i) + '|'; // Aggiungi la lettera corrente al testo, sostituendo il cursore con '|'
-            document.getElementById("textTypingAnimation").innerHTML = newText;
 
-            // Richiama ricorsivamente la funzione per la prossima lettera
-            setTimeout(function () {
-                typeWriter(text, i + 1);
-            }, 100); // Tempo di attesa tra ogni lettera (in millisecondi)
-        } else {
-            // Quando la scrittura è completa, avvia nuovamente il loop per la prossima parola
-            setTimeout(function () {
-                typeEraser(text, i + 1);
-            }, 2000); // Tempo di attesa prima di avviare il loop di scrittura successivo (in millisecondi)
-        }
+       try {
+         if (i < text.length) {
+             let newText = document.getElementById("textTypingAnimation").innerHTML;
+             newText = newText.substring(0, newText.length - 1) + text.charAt(i) + '|'; // Aggiungi la lettera corrente al testo, sostituendo il cursore con '|'
+             document.getElementById("textTypingAnimation").innerHTML = newText;
+ 
+             // Richiama ricorsivamente la funzione per la prossima lettera
+             setTimeout(function () {
+                 typeWriter(text, i + 1);
+             }, 100); // Tempo di attesa tra ogni lettera (in millisecondi)
+         } else {
+             // Quando la scrittura è completa, avvia nuovamente il loop per la prossima parola
+             setTimeout(function () {
+                 typeEraser(text, i + 1);
+             }, 2000); // Tempo di attesa prima di avviare il loop di scrittura successivo (in millisecondi)
+         }
+       } catch (error) {
+        //console.log(error);
+       }
     }
 
     //FUNZIONE CHE CANCELLA LETTERA PER LETTERA
