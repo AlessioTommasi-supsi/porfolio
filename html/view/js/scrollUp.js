@@ -10,6 +10,13 @@ function scrollToAboutMe() {
         behavior: 'smooth'
     });
 }
+function scrollToEducation() {
+
+    window.scrollTo({
+        top:  1700,
+        behavior: 'smooth'
+    });
+}
 
 window.addEventListener('scroll', function () {
     var backToTopBtn = document.getElementById('backToTopBtn');
@@ -25,7 +32,14 @@ window.addEventListener('scroll', function () {
     } else {
         //aboutMeBtn.style.display = 'none';
     }
-});
 
+    var EducationBtn = document.getElementById('EducationBtn');
+    if (window.scrollY > 1200) {
+        EducationBtn.style.display = 'block';
+    } else {
+        //EducationBtn.style.display = 'none';
+    }
+});
+document.getElementById('EducationBtn').addEventListener('click', scrollToEducation);
 document.getElementById('aboutMeBtn').addEventListener('click', scrollToAboutMe);
 document.getElementById('backToTopBtn').addEventListener('click', scrollToTop);

@@ -8,8 +8,12 @@
     /* Apply blur effect */
     padding: 20px;
     margin: 20px auto;
-    
+    opacity: 0.9;
     top: 10%;
+}
+
+.glass_container:hover {
+    opacity: 1;
 }
 
 /* Responsive content inside the glass effect div */
@@ -17,4 +21,6 @@
     font-size: 18px;
     line-height: 1.6;
     text-align: center;
+    overflow: hidden;
 }
+

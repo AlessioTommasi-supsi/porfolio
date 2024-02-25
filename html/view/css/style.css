@@ -18,3 +18,29 @@ body {
     z-index: 1000;
     overflow: hidden;
 }
+
+.cover_img {
+    width: 100%;
+    height: auto;
+    opacity: 0.5;
+}
+
+/* Cambia il colore del link quando è nel suo stato normale */
+a {
+    color: rgb(7, 4, 0);
+}
+
+/* Cambia il colore del link quando è stato visitato */
+a:visited {
+    color: rgb(1, 32, 4);
+}
+
+/* Cambia il colore del link quando il mouse ci passa sopra */
+a:hover {
+    color: rgb(0, 162, 255);
+}
+
+/* Cambia il colore del link quando è attivo, ad esempio quando viene cliccato */
+a:active {
+    color: rgb(0, 119, 128);
+}
