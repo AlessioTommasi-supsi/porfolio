@@ -1,0 +1,40 @@
+.dashboard_button_container {
+    display: flex;
+    z-index: 2000;
+    justify-content: center;
+    align-items: center;
+}
+
+.absolute_dashboard_button_container {
+    position: absolute;
+    top: 70%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.dashboard_link-button {
+    border: none;
+    border-radius: 20px;
+    /* Imposta il raggio dell'angolo per ottenere un bottone arrotondato */
+    padding: 10px 20px;
+    /* Imposta il padding interno per spazio intorno al testo */
+    font-size: 20px;
+    /* Imposta la dimensione del carattere */
+    background-color: rgba(255, 255, 255, 0.7);
+    /* Imposta il colore di sfondo del bottone */
+    color: black;
+    /* Imposta il colore del testo */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+    /* Aggiunge un'ombra al bottone */
+    opacity: 0.8;
+    margin: 20px;
+    transition: all 0.3s ease;
+    font-weight: bold;
+}
+
+.dashboard_link-button:hover {
+    opacity: 1;
+    transform: scale(1.4);
+}

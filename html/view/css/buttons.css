@@ -18,11 +18,12 @@
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
     /* Ombra */
     backdrop-filter: blur(5px);
-    /* Effetto di vetro */
+    transition: all 0.3s ease;
 }
 
 #backToTopBtn:hover {
     background-color: rgba(10, 165, 185, 0.8);
+    transform: scale(1.3);
 }
 
 #aboutMeBtn {
@@ -41,10 +42,12 @@
     cursor: pointer;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
     backdrop-filter: blur(5px);
+    transition: all 0.3s ease;
 }
 
 #aboutMeBtn:hover {
     background-color: rgba(243, 80, 80, 0.8);
+    transform: scale(1.3);
 }
 
 #EducationBtn {
@@ -63,9 +66,185 @@
     cursor: pointer;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
     backdrop-filter: blur(5px);
+    transition: all 0.3s ease;
 }
 
 #EducationBtn:hover {
     background-color: rgba(113, 196, 113, 0.8);
+    transform: scale(1.3);
 }
 
+#ProjectBtn {
+    display: none;
+    position: fixed;
+    bottom: 200px;
+    right: 20px;
+    z-index: 1000;
+    background-color: rgba(177, 18, 250, 0.8);
+    color: black;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(5px);
+    transition: all 0.3s ease;
+}
+
+#ProjectBtn:hover {
+    transform: scale(1.3);
+    background-color: rgba(183, 152, 241, 0.8);
+}
+
+#ExperienceBtn {
+    display: none;
+    position: fixed;
+    bottom: 260px;
+    right: 20px;
+    z-index: 1000;
+    background-color: rgba(22, 227, 241, 0.8);
+    color: black;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(5px);
+    transition: all 0.3s ease;
+}
+
+#ExperienceBtn:hover {
+    transform: scale(1.3);
+    background-color: rgba(152, 238, 241, 0.8);
+}
+
+.knowledge-button {
+    border: none;
+    border-radius: 20px;
+    /* Imposta il raggio dell'angolo per ottenere un bottone arrotondato */
+    padding: 10px 20px;
+    /* Imposta il padding interno per spazio intorno al testo */
+    font-size: 16px;
+    /* Imposta la dimensione del carattere */
+    background-color: #4CAF50;
+    /* Imposta il colore di sfondo del bottone */
+    color: white;
+    /* Imposta il colore del testo */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+    /* Aggiunge un'ombra al bottone */
+    margin: 3px;
+    transition: all 0.3s ease;
+}
+
+.knowledge-button:hover {
+    background-color: #45a049;
+    transform: scale(1.1);
+}
+
+.download-button {
+    border: none;
+    border-radius: 20px;
+    /* Imposta il raggio dell'angolo per ottenere un bottone arrotondato */
+    padding: 10px 20px;
+    /* Imposta il padding interno per spazio intorno al testo */
+    font-size: 16px;
+    /* Imposta la dimensione del carattere */
+    background-color: #0783f8;
+    /* Imposta il colore di sfondo del bottone */
+    color: white;
+    /* Imposta il colore del testo */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+    /* Aggiunge un'ombra al bottone */
+    margin: 3px;
+    transition: all 0.3s ease;
+}
+
+.download-button:hover {
+    background-color: #66b5e2;
+    transform: scale(1.1);
+}
+
+.link-button {
+    border: none;
+    border-radius: 20px;
+    /* Imposta il raggio dell'angolo per ottenere un bottone arrotondato */
+    padding: 10px 20px;
+    /* Imposta il padding interno per spazio intorno al testo */
+    font-size: 16px;
+    /* Imposta la dimensione del carattere */
+    background-color: #a275b8;
+    /* Imposta il colore di sfondo del bottone */
+    color: white;
+    /* Imposta il colore del testo */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+    /* Aggiunge un'ombra al bottone */
+    margin: 3px;
+    transition: all 0.3s ease;
+}
+
+.link-button:hover {
+    background-color: #9864b6;
+    transform: scale(1.1);
+}
+
+
+
+#GetInTouchBtn {
+    display: block;
+    position: fixed;
+    top: 40px;
+    right: 20px;
+    z-index: 1000;
+    background-color: rgba(255, 255, 255, 0.5);;
+    color: black;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(5px);
+    transition: all 0.3s ease;
+}
+
+#GetInTouchBtn:hover {
+    transform: scale(1.3);
+    background-color: rgba(183, 152, 241, 0.8);
+}
+
+#ResumeBtn {
+    display: block;
+    position: fixed;
+    top: 100px;
+    right: 20px;
+    z-index: 1000;
+    background-color: rgba(255, 255, 255, 0.5);
+    ;
+    color: black;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(5px);
+    transition: all 0.3s ease;
+}
+
+#ResumeBtn:hover {
+    transform: scale(1.3);
+    background-color: rgba(183, 152, 241, 0.8);
+}
+
+.date_project {
+    font-size: 17px;
+    font-weight: bold;
+    color: rgb(117, 126, 122);
+    margin: 0px;
+}

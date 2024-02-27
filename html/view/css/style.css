@@ -66,3 +66,32 @@ a:active {
     text-align: justify;
     /* Allinea il testo */
 }
+
+
+.project_maxwidth {
+    width: 700px;
+    height: auto;
+}
+
+footer {
+    background-color: #000000;
+    padding: 1px;
+    text-align: center;
+    font-size: 14px;
+    color: #9e9c9c;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+.professional_container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.professional_box {
+    width: 400px;
+    height: auto;
+    margin: 10px auto;
+}
