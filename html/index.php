@@ -137,6 +137,35 @@ require_once($_SERVER["DOCUMENT_ROOT"] . "/controller/System/importer.php");
             </div>
             <br>
             <div class="glass_container">
+
+                <div class="glass_container">
+                    <div class="glass_content">
+                        <img class="cover_img" src="./view/images/aboutMeImgCover.jpg" alt="Immagine senza sfondo">
+                        <h1>About me: </h1>
+                        <p>
+                            Recent Computer Engineering
+                            graduate from Politecnico di Milano
+                            with a strong academic foundation in
+                            computer science and engineering
+                            principles.
+                            <br>
+                            Eager to apply my knowledge and
+                            analytical skills to contribute to
+                            innovative projects
+                        </p>
+
+                        <p>
+                            My enginieering passion started in childhood, driven by a passion for creating tangible results.
+                            <br>
+                            <br>
+                            Progressing swiftly into programming and I discovered joy in crafting digital solutions.
+                            <br>
+                            Today, I am a full-stack developer with a passion for creating and deploying complex IT solutions.
+                            <br>
+                        </p>
+                    </div>
+                </div>
+
                 <!-- Responsive content inside the glass effect div -->
                 <div class="glass_content">
                     <h1>Project</h1>
@@ -153,11 +182,31 @@ require_once($_SERVER["DOCUMENT_ROOT"] . "/controller/System/importer.php");
                 <div class="glass_content">
                     <h1>Other intresting Project</h1>
                 </div>
+
+                <div class="glass_container">
+                    <div class="glass_content">
+                        <img class="cover_img" src="./view/images/Threejs.png" alt="Description of the image">
+                        <div class="">
+                            <h3>ThreeJs - Lugano</h3>
+                            <p>
+                                <button class="knowledge-button">JS</button>
+                                <button class="knowledge-button">Threejs</button>
+                                <button class="knowledge-button">HTML</button>
+                                <button class="knowledge-button">CSS</button>
+                            </p>
+                            <p>
+                                A project deveoped in collaboration with SUPSI and the city of Lugano to create a 3D model of the city.
+                            </p>
+                            <a href="./model/docs/threejs_lugano.docx"> <button class="download-button">docs</button> </a>
+                        </div>
+                    </div>
+                </div>
+
                 <div class="glass_content">
                     <div class="glass_container">
-                        <figure class="image-with-text">
-                            <img class="project_maxwidth" src="./view/images/Threejs.png" alt="Description of the image">
-                            <figcaption class="project_maxwidth">
+                        <div class="image-with-text responsive_div">
+                            <img class="project_maxwidth responsive_img" src="./view/images/Threejs.png" alt="Description of the image">
+                            <div class="project_maxwidth responsive_text">
                                 <h3>ThreeJs - Lugano</h3>
                                 <p>
                                     <button class="knowledge-button">JS</button>
@@ -169,8 +218,8 @@ require_once($_SERVER["DOCUMENT_ROOT"] . "/controller/System/importer.php");
                                     A project deveoped in collaboration with SUPSI and the city of Lugano to create a 3D model of the city.
                                 </p>
                                 <a href="./model/docs/threejs_lugano.docx"> <button class="download-button">docs</button> </a>
-                            </figcaption>
-                        </figure>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
@@ -387,23 +436,6 @@ require_once($_SERVER["DOCUMENT_ROOT"] . "/controller/System/importer.php");
 
             </div>
 
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
 
             <footer>
                 &copy; 2024 Alessio Tommasi - Tutti i diritti riservati.
@@ -423,6 +455,7 @@ require_once($_SERVER["DOCUMENT_ROOT"] . "/controller/System/importer.php");
         <script src="./view/js/rotation_on_scroll.js"></script>
         <script src="./view/js/autoType.js"></script>
         <script src="./view/js/scrollUp.js"></script>
+        <script src="./view/js/class_switcher.js"></script>
 </body>
 
 </html>
