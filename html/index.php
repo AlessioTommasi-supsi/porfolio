@@ -411,7 +411,6 @@ require_once($_SERVER["DOCUMENT_ROOT"] . "/controller/System/importer.php");
         <script src="./view/js/autoType.js"></script>
         <script src="./view/js/scrollUp.js"></script>
         <script src="./view/js/class_switcher.js"></script>
-        <script src="./view/js/HorizontalScrollHandler.js"></script>
 </body>
 
 </html>
