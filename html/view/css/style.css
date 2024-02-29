@@ -1,5 +1,7 @@
 body {
     background-color: #fcc040;
+    overflow-x: hidden;
+    height: 100%;
 }
 
 .no_overflow {
