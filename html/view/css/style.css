@@ -97,3 +97,19 @@ footer {
     height: auto;
     margin: 10px auto;
 }
+
+.main_container_absolute {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.main_container_relative {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
