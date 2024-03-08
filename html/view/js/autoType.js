@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', function () {
     const text_to_keep = "I am:  "; // Testo da mantenere fisso
-    const textArray = ["Developer", "Enginieer", "IT expert",  "electronics enthusiast", "ALESSIO"]; // Array di parole da scrivere
+    const textArray = ["Developer", "Engineer", "IT expert",  "electronics enthusiast", "ALESSIO"]; // Array di parole da scrivere
     let currentTextIndex = 0; // Indice della parola corrente
     
 
