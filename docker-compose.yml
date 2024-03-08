@@ -5,10 +5,10 @@ services:
     image: mysql:latest
     container_name: my_mysql
     environment:
-      MYSQL_ROOT_PASSWORD: example
+      MYSQL_ROOT_PASSWORD: 7b24afc8bc80e548d66c4e7ff72171c5
       MYSQL_DATABASE: my_database
       MYSQL_USER: my_user
-      MYSQL_PASSWORD: my_password
+      MYSQL_PASSWORD: ba9dafc215bc83c90d6cd8ac4dd86d02
 
   php:
     image: php:apache

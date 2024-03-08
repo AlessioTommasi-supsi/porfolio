@@ -398,7 +398,7 @@ require_once($_SERVER["DOCUMENT_ROOT"] . "/controller/System/importer.php");
 
         </div>
         <a href="mailto:alessio.tommasi.lavoro@gmail.com"><button id="GetInTouchBtn">📲</button></a>
-        <a href="./model/docs/curruculum.pdf"><button id="ResumeBtn">📖</button></a>
+        <a href="./model/docs/curriculum.pdf"><button id="ResumeBtn">📖</button></a>
 
         <button id="ExperienceBtn">🗃️</button>
         <button id="ProjectBtn">🎯</button>
