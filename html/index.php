@@ -21,12 +21,14 @@ require_once($_SERVER["DOCUMENT_ROOT"] . "/controller/System/importer.php");
     <link rel="stylesheet" href="./view/css/autoType.css">
     <link rel="stylesheet" href="./view/css/buttons.css">
     <link rel="stylesheet" href="./view/css/dashboard.css">
+    <link rel="stylesheet" href="./view/css/particle_style.css">
 </head>
 
 <body>
 
     <div class="main_container_absolute">
         <div class="main_container_relative">
+            <div id="particles-js"></div>
 
             <div id="textTypingContainer">
                 <div id="textTypingAnimation" class="glassEffect"></div>
@@ -414,9 +416,9 @@ require_once($_SERVER["DOCUMENT_ROOT"] . "/controller/System/importer.php");
                 <script src="./view/js/scrollUp.js"></script>
                 <script src="./view/js/class_switcher.js"></script>
 
-
-
-
+                <script src="./view/js/particleLib/particles.js"></script>
+                <script src="./view/js/particleLib/app.js"></script>
+            
             </div>
         </div>
     </div>

@@ -13,6 +13,7 @@
 
 .glass_container:hover {
     opacity: 1;
+    backdrop-filter: blur(20px);
 }
 
 /* Responsive content inside the glass effect div */
