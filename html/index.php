@@ -164,6 +164,30 @@ require_once($_SERVER["DOCUMENT_ROOT"] . "/controller/System/importer.php");
                         <div class="glass_content">
                             <div class="glass_container">
                                 <div class="image-with-text responsive_div">
+                                    <img class="project_maxwidth responsive_img" src="./view/images/connectionTimbratore.png" alt="Description of the image">
+                                    <div class="project_maxwidth responsive_text">
+                                        <h3>Presence Detector</h3>
+                                        <p>
+                                            <button class="knowledge-button">C++</button>
+                                            <button class="knowledge-button">RFID</button>
+                                            <button class="knowledge-button">Python</button>
+                                            <button class="knowledge-button">Raspberry</button>
+                                            <button class="knowledge-button">Docker</button>
+                                        </p>
+                                        <p>
+                                            A project deveoped in for the need of the company Grill Garden S.N.C fully developed by me. now in production.
+                                        </p>
+                                        <a href="./model/docs/README_TIMBRATORE.md"> <button class="download-button">docs</button> </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                        <div class="glass_content">
+                            <div class="glass_container">
+                                <div class="image-with-text responsive_div">
                                     <img class="project_maxwidth responsive_img" src="./view/images/Threejs.png" alt="Description of the image">
                                     <div class="project_maxwidth responsive_text">
                                         <h3>ThreeJs - Lugano</h3>
@@ -181,6 +205,8 @@ require_once($_SERVER["DOCUMENT_ROOT"] . "/controller/System/importer.php");
                                 </div>
                             </div>
                         </div>
+
+
 
                         <div class="glass_content">
                             <div class="glass_container">
@@ -227,6 +253,27 @@ require_once($_SERVER["DOCUMENT_ROOT"] . "/controller/System/importer.php");
                             </div>
                         </div>
 
+                        <div class="glass_content">
+                            <div class="glass_container">
+                                <div class="image-with-text responsive_div">
+                                    <img class="project_maxwidth responsive_img" src="./view/images/iot_schema_elettrico.jpeg" alt="Description of the image">
+                                    <div class="project_maxwidth responsive_text">
+                                        <h3>iot Project </h3>
+                                        <p>
+                                            <button class="knowledge-button">C++</button>
+                                            <button class="knowledge-button">ESP32</button>
+                                            <button class="knowledge-button">MODBUS</button>
+                                            <button class="knowledge-button">CSS</button>
+                                        </p>
+                                        <p>
+                                            iotProject developed in SUPSI Master in Computer Science course IoT, focusing on ESP32, ESAM, and Modbus Protocol.
+                                        </p>
+                                        <a href="https://github.com/AlessioTommasi-supsi/iotProject"> <button class="download-button">docs</button> </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
                         <div class="glass_content">
                             <div class="glass_container">
                                 <div class="image-with-text responsive_div">
@@ -418,7 +465,7 @@ require_once($_SERVER["DOCUMENT_ROOT"] . "/controller/System/importer.php");
 
                 <script src="./view/js/particleLib/particles.js"></script>
                 <script src="./view/js/particleLib/app.js"></script>
-            
+
             </div>
         </div>
     </div>

@@ -4,19 +4,21 @@ services:
   mysql:
     image: mysql:latest
     container_name: my_mysql
-    environment:
+    environment: 
       MYSQL_ROOT_PASSWORD: 7b24afc8bc80e548d66c4e7ff72171c5
       MYSQL_DATABASE: my_database
       MYSQL_USER: my_user
       MYSQL_PASSWORD: ba9dafc215bc83c90d6cd8ac4dd86d02
-
+    ports:
+      - "3306:3306"
+    command: --bind-address=0.0.0.0
   php:
     image: php:apache
     container_name: my_php
     volumes:
       - ./html:/var/www/html
     ports:
-      - "8080:80"
+      - "80:80"
     depends_on:
       - mysql
     restart: always
