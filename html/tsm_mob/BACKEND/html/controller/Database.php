@@ -1,6 +1,6 @@
 <?php
 class Database {
-    private $host = "mysql_tsm_mob_comp_project";
+    private $host = "portfolio";
     private $db_name = "TSM_MobileProject";
     private $username = "root";
     private $password = "MYSQL_ROOT_PASSWORD";
